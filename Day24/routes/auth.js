@@ -92,34 +92,3 @@ authRouter.post("/logout", userAuth ,async (req,res)=>{
 module.exports=authRouter;
 
 
-
-
-
-
-// লগআউট প্রক্রিয়ার সংক্ষিপ্ত সারাংশ:
-
-// 1.টোকেন নেওয়া – কুকি থেকে JWT টোকেন নেওয়া হয়।
-
-// 2.টোকেন ডিকোড – JWT ডিকোড করে এক্সপায়ারেশন টাইম বের করা হয়।
-
-// 3.রেডিসে ব্লক – টোকেনকে রেডিসে "Blocked" হিসেবে সেভ করে টোকেনের এক্সপায়ার টাইমে অটো ডিলিটের ব্যবস্থা করা হয়।
-
-// 4.কুকি ডিলিট – ব্রাউজারের কুকি সাথে সাথে ডিলিট করা হয়।
-
-// 5.কনফার্মেশন – ইউজারকে লগআউট সফল হওয়ার মেসেজ দেওয়া হয়।
-
-
-
-// Summary (এক লাইনে পুরো flow)
-
-// 1.Cookie থেকে token নিলো
-
-// 2.Token decode করে expiry time পেল
-
-// 3.Redis এ token:yourtoken key store করলো → "Blocked"
-
-// 4.Exact token expiry time পর্যন্ত Redis-এ রাখল
-
-// 5.Browser cookie clear করলো
-
-// 6.Logout success message দিল

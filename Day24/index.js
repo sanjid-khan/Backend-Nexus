@@ -56,57 +56,6 @@ const InitializeConnection= async ()=>{
 InitializeConnection ();
 
 
- 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-// app.get("/info", async (req, res) => {
-//   try {
-//     const users = await User.find({});
-//     res.status(200).json({ message: "Users fetched", data: users });
-//   } catch (err) {
-//     res.status(500).json({ message: "Error fetching users", error: err });
-//   }
-// });
-
-// app.post("/info", async (req, res) => {
-//   try {
-//     const user = await User.create(req.body);
-//     res.status(201).json({ message: "User created", data: user });
-//   } catch (err) {
-//     res.status(400).json({ message: "Error creating user", error: err });
-//   }
-// });
-
-// app.put("/info/:name", async (req, res) => {
-//   try {
-//     const user = await User.updateOne({ name: req.params.name }, req.body);
-//     res.status(200).json({ message: "User updated", data: user });
-//   } catch (err) {
-//     res.status(500).json({ message: "Error updating user", error: err });
-//   }
-// });
-
-// app.delete("/info/:name", async (req, res) => {
-//   try {
-//     const result = await User.deleteOne({ name: req.params.name });
-//     res.status(200).json({ message: "User deleted", data: result });
-//   } catch (err) {
-//     res.status(500).json({ message: "Error deleting user", error: err });
-//   }
-// });
 
 
 
